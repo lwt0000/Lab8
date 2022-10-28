@@ -50,9 +50,11 @@ public class CustomListTest {
     void testremoveCity(){
         list = MockCityList();
         City city = new City("Yellowknife", "Northwest Territories");
+        list.addCity(city);
         assertEquals(1, list.getCount());
         list.delete(city);
         assertEquals(0, list.getCount());
     }
+
 
 }
